@@ -2,7 +2,7 @@
  * Javadoc style sheet
  */
 
-@import url('resources/fonts/dejavu.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /*
  * Styles for individual HTML elements.
@@ -14,7 +14,7 @@
 body {
     background-color:#ffffff;
     color:#353833;
-    font-family:'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-family:'Noto Sans KR', Arial, Helvetica, sans-serif;
     font-size:14px;
     margin:0;
     padding:0;
@@ -41,7 +41,7 @@ a[name] {
     color:#353833;
 }
 pre {
-    font-family:'DejaVu Sans Mono', monospace;
+    font-family:'Noto Sans KR', monospace;
     font-size:14px;
 }
 h1 {
@@ -66,19 +66,19 @@ ul {
     list-style-type:disc;
 }
 code, tt {
-    font-family:'DejaVu Sans Mono', monospace;
+    font-family:'Noto Sans KR', monospace;
     font-size:14px;
     padding-top:4px;
     margin-top:8px;
     line-height:1.4em;
 }
 dt code {
-    font-family:'DejaVu Sans Mono', monospace;
+    font-family:'Noto Sans KR', monospace;
     font-size:14px;
     padding-top:4px;
 }
 .summary-table dt code {
-    font-family:'DejaVu Sans Mono', monospace;
+    font-family:'Noto Sans KR', monospace;
     font-size:14px;
     vertical-align:top;
     padding-top:4px;
@@ -87,7 +87,7 @@ sup {
     font-size:8px;
 }
 button {
-    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 /*
@@ -274,7 +274,7 @@ main {
     position:relative;
 }
 dl.notes > dt {
-    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
     font-size:12px;
     font-weight:bold;
     margin:10px 0 0 0;
@@ -283,7 +283,7 @@ dl.notes > dt {
 dl.notes > dd {
     margin:5px 0 10px 0;
     font-size:14px;
-    font-family:'DejaVu Serif', Georgia, "Times New Roman", Times, serif;
+    font-family:'Noto Sans KR', Georgia, "Times New Roman", Times, serif;
 }
 dl.name-value > dt {
     margin-left:1px;
@@ -380,19 +380,19 @@ ul.summary-list > li {
 }
 
 div.table-tabs > button {
-   border: none;
-   cursor: pointer;
-   padding: 5px 12px 7px 12px;
-   font-weight: bold;
-   margin-right: 3px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px 7px 12px;
+    font-weight: bold;
+    margin-right: 3px;
 }
 div.table-tabs > button.active-table-tab {
-   background: #F8981D;
-   color: #253441;
+    background: #F8981D;
+    color: #253441;
 }
 div.table-tabs > button.table-tab {
-   background: #4D7A97;
-   color: #FFFFFF;
+    background: #4D7A97;
+    color: #FFFFFF;
 }
 .two-column-summary {
     display: grid;
@@ -483,7 +483,7 @@ div.table-tabs > button.table-tab {
 }
 div.block {
     font-size:14px;
-    font-family:'DejaVu Serif', Georgia, "Times New Roman", Times, serif;
+    font-family:'Noto Sans KR', Georgia, "Times New Roman", Times, serif;
 }
 .col-last div {
     padding-top:0;
@@ -495,7 +495,7 @@ div.block {
 .package-signature,
 .type-signature,
 .member-signature {
-    font-family:'DejaVu Sans Mono', monospace;
+    font-family:'Noto Sans KR', monospace;
     font-size:14px;
     margin:14px 0;
     white-space: pre-wrap;
@@ -542,7 +542,7 @@ h1.hidden {
 }
 .deprecation-block {
     font-size:14px;
-    font-family:'DejaVu Serif', Georgia, "Times New Roman", Times, serif;
+    font-family:'Noto Sans KR', Georgia, "Times New Roman", Times, serif;
     border-style:solid;
     border-width:thin;
     border-radius:10px;
