@@ -1,5 +1,5 @@
 /**
- * protoCS-java 라이브러리 내부에서 전반적으로 사용되는 객체들을 모아놓은 패키지 입니다.
+ * protoCS-java 라이브러리 내부에서 전반적으로 사용되는 객체들을 제공하는 패키지 입니다.
  *
  * @author JeeInho
  * @since 0.0.1alpha-RELEASE
