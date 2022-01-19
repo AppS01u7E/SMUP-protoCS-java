@@ -46,7 +46,7 @@ javadoc {
     options.addStringOption("docencoding","UTF-8")
     copy {
         from "build/docs/javadoc"
-        into "src/docs/javadoc"
+        into "docs/javadoc"
     }
 }
 
