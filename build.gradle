@@ -1,8 +1,12 @@
 plugins {
-    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+    id 'signing'
 }
 
-group 'com.appsolute.soom'
+final String currentVersion = '0.0.1alpha-RELEASE'
+
+group 'io.github.apps01u7e'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,10 +14,86 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
 test {
     useJUnitPlatform()
+}
+
+
+task javadocJar(type: Jar) {
+    archiveClassifier.set 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    archiveClassifier.set 'sources'
+    from sourceSets.main.allSource
+}
+
+signing {
+    sign publishing.publications
+}
+
+javadoc {
+    options.addStringOption("locale","ko_KR")
+    options.addStringOption("encoding","UTF-8")
+    options.addStringOption("charset","UTF-8")
+    options.addStringOption("docencoding","UTF-8")
+    copy {
+        from "build/docs/javadoc"
+        into "src/doc/javadoc"
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'io.github.AppS01u7E'
+            artifactId = 'protoCS-java'
+            version = currentVersion
+
+            from components.java
+            artifact sourcesJar
+            artifact javadocJar
+
+            pom {
+                name = 'protoCS-java'
+                description = "It's a library that defines communication objects between various services."
+                url = 'https://github.com/AppS01u7E/SMUP-protoCS-java'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'velocia'
+                        name = 'JeeInho'
+                        email = 'velocia.developer@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/AppS01u7E/SMUP-protoCS-java.git'
+                    developerConnection = 'scm:git:ssh://github.com/AppS01u7E/SMUP-protoCS-java.git'
+                    url = 'https://github.com/AppS01u7E/SMUP-protoCS-java/'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            credentials {
+                username = project.ossrhUsername
+                password = project.ossrhPassword
+            }
+            name = "OSSRH"
+            url = 'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'
+        }
+    }
 }
