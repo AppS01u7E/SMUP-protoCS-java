@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"io.github.apps01u7e.global.data"},{"l":"io.github.apps01u7e.global.data.request"},{"l":"io.github.apps01u7e.global.data.response"},{"l":"io.github.apps01u7e.global.data.type"}];updateSearchResults();
