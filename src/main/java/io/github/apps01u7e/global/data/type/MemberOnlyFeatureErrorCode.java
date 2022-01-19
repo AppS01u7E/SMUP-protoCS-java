@@ -12,14 +12,13 @@ import io.github.apps01u7e.global.data.ErrorCode;
  */
 public enum MemberOnlyFeatureErrorCode implements ErrorCode {
     /**
-     * 해당 기능에 접근할 권한이 없을 경우 발생하는 오류
-     * 예를들어서,
-     * - 그룹(SOOM) 에서의 가입요청 수락은 해당 그룹의 관리자만이 가능하다.
-     * - 해당 그룹의 관리자가 아닌 사람이 해당 기능에 접근한다.
-     * - PERMISSION_DENIED 오류가 발생한다.
-     * 같은 경우를 의미한다.
-     * 즉, 서비스에 가입된 사용자이지만, 해당 기능을 이용할 권한이 없을 경우 발생한다
-     * 서비스에 가입되지 않은 사용자이기에 발생하는 오류는 LOGIN_REQUIRED 참고
+     * 해당 기능에 접근할 권한이 없을 경우 발생하는 오류<br>
+     * 예를들어서,<br>
+     * - 그룹(SOOM) 에서의 가입요청 수락은 해당 그룹의 관리자만이 가능하지만,<br>
+     * - 해당 그룹의 관리자가 아닌 사람이 해당 기능에 접근할 경우,<br>
+     * - PERMISSION_DENIED 오류가 발생합니다.<br>
+     * 즉, 서비스에 가입된 사용자이지만, 해당 기능을 이용할 권한이 없을 경우 발생합니다<br>
+     * 서비스에 가입되지 않은 사용자이기에 발생하는 오류는 LOGIN_REQUIRED 를 참고해주세요
      * 
      * @see UniversalErrorCode#LOGIN_REQUIRED 서비스에 가입되지 않은 사용자이기에 발생하는 오류
      */
