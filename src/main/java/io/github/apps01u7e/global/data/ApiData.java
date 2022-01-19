@@ -1,6 +1,7 @@
 package io.github.apps01u7e.global.data;
 
 import io.github.apps01u7e.global.data.type.ApiVersion;
+import io.github.apps01u7e.global.data.type.HttpMethod;
 
 /**
  * soom 프로젝트에서 사용되는 모든 api 간 통신객체임을 정의하는 인터페이스 입니다.<br>
@@ -30,4 +31,15 @@ public interface ApiData {
      * @since 0.0.1alpha-RELEASE
      */
     String getURN();
+    /**
+     * 자원(통신객체)가 어떤 HTTPMethod 를 통해 통신하는지를 반환합니다.<br>
+     * (ex, GET, POST, PUT...)
+     *
+     * @return 자원이 사용되는 통신의 HTTP Method
+     *
+     * @author JeeInho
+     * @since 0.0.1alpha-RELEASE
+     */
+    HttpMethod getHttpMethod();
+
 }
