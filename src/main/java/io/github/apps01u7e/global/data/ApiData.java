@@ -41,5 +41,4 @@ public interface ApiData {
      * @since 0.0.1alpha-RELEASE
      */
     HttpMethod getHttpMethod();
-
 }
