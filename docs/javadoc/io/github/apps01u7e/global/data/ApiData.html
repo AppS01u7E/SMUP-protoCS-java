@@ -105,9 +105,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">자원(통신객체)이 명시되는 api 의 버전을 반환합니다.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#getURN()">getURN</a></span>()</code></div>
+<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="type/HttpMethod.html" title="enum class in io.github.apps01u7e.global.data.type">HttpMethod</a></code></div>
+<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#getHttpMethod()">getHttpMethod</a></span>()</code></div>
 <div class="col-last odd-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
+<div class="block">자원(통신객체)가 어떤 HTTPMethod 를 통해 통신하는지를 반환합니다.<br>
+ (ex, GET, POST, PUT...)</div>
+</div>
+<div class="col-first even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3"><code><span class="member-name-link"><a href="#getURN()">getURN</a></span>()</code></div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table method-summary-table-tab3">
 <div class="block">자원(통신객체)의 논리적 위치를 반환합니다.<br>
  (ex, api/v1/account/{id})</div>
 </div>
@@ -147,6 +153,20 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>자원의 논리적 위치</dd>
+<dt>Since:</dt>
+<dd>0.0.1alpha-RELEASE</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getHttpMethod()">
+<h3>getHttpMethod</h3>
+<div class="member-signature"><span class="return-type"><a href="type/HttpMethod.html" title="enum class in io.github.apps01u7e.global.data.type">HttpMethod</a></span>&nbsp;<span class="element-name">getHttpMethod</span>()</div>
+<div class="block">자원(통신객체)가 어떤 HTTPMethod 를 통해 통신하는지를 반환합니다.<br>
+ (ex, GET, POST, PUT...)</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>자원이 사용되는 통신의 HTTP Method</dd>
 <dt>Since:</dt>
 <dd>0.0.1alpha-RELEASE</dd>
 </dl>

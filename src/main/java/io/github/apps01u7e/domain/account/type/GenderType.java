@@ -9,5 +9,16 @@ package io.github.apps01u7e.domain.account.type;
  * @since 0.0.1alpha-RELEASE
  */
 public enum GenderType {
-    MALE, FEMALE, ETC
+    /**
+     * 남성
+     */
+    MALE,
+    /**
+     * 여성
+     */
+    FEMALE,
+    /**
+     * 그 외 성별 혹은 비공개
+     */
+    ETC
 }

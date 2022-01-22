@@ -9,5 +9,16 @@ package io.github.apps01u7e.domain.account.type;
  * @since 0.0.1alpha-RELEASE
  */
 public enum AccountPermission {
-    OPERATOR, TEACHER, STUDENT
+    /**
+     * 관리자
+     */
+    OPERATOR,
+    /**
+     * 교사
+     */
+    TEACHER,
+    /**
+     * 학생
+     */
+    STUDENT
 }

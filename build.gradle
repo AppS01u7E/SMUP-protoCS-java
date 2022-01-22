@@ -45,6 +45,9 @@ javadoc {
     options.addStringOption("encoding","UTF-8")
     options.addStringOption("charset","UTF-8")
     options.addStringOption("docencoding","UTF-8")
+}
+
+task javadocCpy {
     delete "docs/javadoc"
     copy {
         from "build/docs/javadoc"
