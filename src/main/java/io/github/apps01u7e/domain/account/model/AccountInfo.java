@@ -7,7 +7,7 @@ import io.github.apps01u7e.domain.type.SchoolType;
 import java.time.LocalDate;
 
 /**
- * 계정 정보 을 명시한 모델입니다.
+ * 계정 정보 를 명시한 모델입니다.
  * 계정 도메인 내에서 범용적으로 사용됩니다.
  *
  * @author JeeInho
